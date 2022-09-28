@@ -7,16 +7,18 @@
   <body>
 
 
-    <header>
-      <nav class = "navigation">
+    <header class="main-header">
+      <nav class="navigation">
         <h1 class="visually-hidden">Device</h1>
-        <a class="navigation-logo" href="index.html">
+        <a class="logo-link" href = "index.html">
         <img class="logo" src="#" alt="Логотип Device">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
              <input type="text" id="search-nav" name="search-nav" placeholder="Поиск по сайту">
              <button class="button-search" type="submit">Найти</button>
+             </form>
           </li>
           <li class="navigation-item">
             <img class="login-image" src="#" alt="Знак входа">
@@ -34,7 +36,7 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <b>Каталог товаров</b>
-            <button class="button-catalog" type="submit">+</button>
+            <button class="button-catalog" type="button">+</button>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="delivery.html">Доставка</a>
@@ -66,7 +68,7 @@
         </ul>
       </header>
       <section class="catalog-products">
-        <h2 class="catalog-title">Фильтр</h2>
+        <h2 class="catalog-title">Фильтр:</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
@@ -123,43 +125,46 @@
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
+        <h2 class="catalog-title">Сортировка:</h2>
         <select class="select-control" aria-label="Сортировка:">
           <option value="popular">Популярные</option>
         </select>
-        <a class="button" href="#" >
-          <span class="visually-hidden">Вверх</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Вниз</span>
-        </a>
+        <div class="button-updown">
+          <a class="button" href="#" >
+            <span class="visually-hidden">Вверх</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Вниз</span>
+          </a>
+        </div>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="#" alt="">
               <h3 class="product-card-title">Любительская селфи-палка</h3>
+              <b class="product-card-price">500 ₽</b>
             </a>
-            <b class="product-card-price">500 ₽</b>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="#" alt="">
               <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+              <b class="product-card-price">1500 ₽</b>
             </a>
-            <b class="product-card-price">1500 ₽</b>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="#" alt="">
               <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+              <b class="product-card-price">2500 ₽</b>
             </a>
-            <b class="product-card-price">2500 ₽</b>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="#" alt="">
               <h3 class="product-card-title">Селфи-палка "Следуй за мной"</h3>
+              <b class="product-card-price">1500 ₽</b>
             </a>
-            <b class="product-card-price">1500 ₽</b>
           </li>
         </ul>
         <button class="button pagination-show-more" type="button">Загрузить ещё</button>
@@ -179,37 +184,7 @@
             <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">6</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">7</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">8</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">9</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">11</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">12</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">13</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">14</a>
+            <a class="pagination-link" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">15</a>
@@ -227,7 +202,9 @@
     <footer>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <img class="logo-footer" src="#" alt="Логотип Device">
+        <a class="logo-footer-link" href = "#">
+          <img class="logo-footer" src="#" alt="Логотип Device">
+        </a>
         <address class="footer-contacts-address">
           <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
@@ -247,13 +224,19 @@
         </ul>
         <ul class="footer-social-network-list">
           <li class="footer-social-network-list-item">
-            <img class="footer-social-network-images" src="#" alt="Ссылка на группу в Вконтакте">
+            <a class="footer-social-network-link" href="#">
+              <img class="footer-social-network-images" src="#" alt="Ссылка на группу в Вконтакте">
+            </a>
           </li>
           <li class="footer-social-network-list-item">
-            <img class="footer-social-network-images" src="#" alt="Ссылка на группу в Instagram">
+            <a class="footer-social-network-link" href="#">
+              <img class="footer-social-network-images" src="#" alt="Ссылка на группу в Instagram">
+            </a>
           </li>
           <li class="footer-social-network-list-item">
-            <img class="footer-social-network-images" src="#" alt="Ссылка на группу в Tvitter">
+            <a class="footer-social-network-link" href="#">
+              <img class="footer-social-network-images" src="#" alt="Ссылка на группу в Tvitter">
+            </a>
           </li>
         </ul>
       </section>
@@ -262,7 +245,9 @@
         <address class="footer-contacts-address">
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
-        <img class="footer-image" src="#" alt="Логотип html academy">
+        <a class="logo-html-academy" href = "#">
+          <img class="footer-image" src="#" alt="Логотип html academy">
+        </a>
       </section>
     </footer>
 

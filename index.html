@@ -54,18 +54,33 @@
 
     <main>
       <section class="slider">
-        <img class="slider-image" src="#" alt="Квадрокоптер">
+
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
         <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующее фото</span>
         </button>
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <button class="button-pagination" type="button">
+              <span class="visually-hidden">.</span>
+            </button>
+          </li>
+          <li class="pagination-item">
+            <button class="button-pagination" type="button">
+              <span class="visually-hidden">.</span>
+            </button>
+          </li>
+          <li class="pagination-item">
+            <button class="button-pagination" type="button">
+              <span class="visually-hidden">.</span>
+            </button>
+          </li>
+        </ul>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">Квадрокоптер</span>
-            </button>
+            <img class="slider-image" src="#" alt="Квадрокоптер">
             <h2 class="slider-heading">Порхает как бабочка,жалит как пчела!</h2>
             <p class="slider-paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="slider-link" href="#">Подробнее</a>
@@ -73,18 +88,14 @@
             <b class="slider-specifications">50 м</b><span class="slider-description">Радиус поражения</span>
           </li>
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">Смарт-часы</span>
-            </button>
+            <img class="slider-image" src="#" alt="Квадрокоптер">
             <h2 class="slider-heading">Худеем правильно!</h2>
             <p class="slider-paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="slider-link" href="#">Подробнее</a>
             <b class="slider-specifications">48 часов</b><span class="slider-description">Без перезарядки</span>
           </li>
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">Палка для селфи</span>
-            </button>
+            <img class="slider-image" src="#" alt="Квадрокоптер">
             <h2 class="slider-heading">Делай селфи, как Бен Стиллер! </h2>
             <p class="slider-paragraph">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             <a class="slider-link" href="#">Подробнее</a>
@@ -201,17 +212,15 @@
 
 
     <footer>
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+      <div class="footer-contacts">
         <a class="logo-footer-link" href = "#">
           <img class="logo-footer" src="#" alt="Логотип Device">
         </a>
         <address class="footer-contacts-address">
           <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
-      </section>
-      <section class="footer-links">
-        <h2 class="visually-hidden">Ссылки</h2>
+      </div>
+      <div class="footer-links">
         <ul class="footer-services-list">
           <li class="footer-services-list-item">
             <a class="footer-services-links" href="#">Доставка</a>
@@ -240,16 +249,15 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+      </div>
+      <div class="footer-contacts">
         <address class="footer-contacts-address">
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <a class="logo-html-academy" href = "#">
           <img class="footer-image" src="#" alt="Логотип html academy">
         </a>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

@@ -5,23 +5,26 @@
   font-weight: 800;
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
+}
 
+@font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
+}
 
+@font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
-
 }
 
 
-.body {
+body {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -57,7 +60,6 @@
 }
 
 .navigation-link {
-  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -91,7 +93,6 @@
 }
 
 .slider-paragraph {
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -100,7 +101,7 @@
 }
 
 .slider-link {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -112,7 +113,6 @@
 }
 
 .slider-specifications {
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -121,10 +121,8 @@
 }
 
 .slider-description {
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 30px;
   color: #444444;
 }
@@ -132,7 +130,7 @@
 /* Список категорий каталога */
 
 .catalog-categories {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -153,7 +151,7 @@
 }
 
 .button-services {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -164,7 +162,7 @@
 }
 
 .services-heading {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -173,7 +171,6 @@
 }
 
 .services-paragraph {
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -194,7 +191,7 @@
 }
 
 .delivery-text {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -205,7 +202,7 @@
 /* Контактная информация */
 
 .contact-heading {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -214,7 +211,6 @@
 }
 
 .contact-paragraph {
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -223,7 +219,6 @@
 }
 
 .contact-list-item {
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -232,7 +227,7 @@
 }
 
 .contact-button {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -244,7 +239,6 @@
 }
 
 .contact-text {
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -253,7 +247,6 @@
 }
 
 .contact-phone {
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -269,7 +262,7 @@
 }
 
 .distribution-heading {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -278,7 +271,6 @@
 }
 
 .distribution-paragraph {
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -287,7 +279,7 @@
 }
 
 .button-distribution {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -297,7 +289,6 @@
 }
 
 .distribution-info {
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -308,7 +299,7 @@
 /* catalog.html */
 /* Хлебные крошки*/
 .inner-header h1{
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -317,7 +308,7 @@
 }
 
 .breadcrumbs-link {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -337,7 +328,7 @@
 }
 
 .catalog-title {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -346,7 +337,7 @@
 }
 
 .catalog-filter-title {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -355,7 +346,7 @@
 }
 
 .control{
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -364,7 +355,7 @@
 }
 
 .button-vision {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -374,7 +365,7 @@
 }
 
 .select-control {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -388,7 +379,7 @@
 }
 
 .product-card-title {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -397,7 +388,7 @@
 }
 
 .product-card-price {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -407,7 +398,7 @@
 }
 
 .pagination-show-more {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -417,7 +408,7 @@
 }
 
 .pagination-link-number {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -435,7 +426,7 @@
 }
 
 .about-text {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -444,7 +435,7 @@
 }
 
 .footer-services-links {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -455,7 +446,7 @@
 }
 
 .footer-contacts-address-phone {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

@@ -23,8 +23,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -47,7 +54,26 @@ body {
 
 .main-header {
   color: #000000;
+}
+
+
+
+.logo-link {
+  width: 145px;
+  height: 36px;
+}
+
+.navigation{
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
   background-color: #FFE17F;
+}
+
+.navigation-list {
+  width: 1040px;
+  margin: 0;
+  padding: 0;
 }
 
 .button-search {
@@ -82,6 +108,16 @@ body {
 
 /* index.html */
 /* Стили слайдера */
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+
+  width: 1160px;
+  margin: 0 auto;
+}
 
 .slider-heading {
   font-family: "Raleway", sans-serif;
@@ -201,6 +237,15 @@ body {
 
 /* Контактная информация */
 
+.contact-information {
+  display: flex;
+}
+
+.contact-information-block {
+  width: 540px;
+  margin-right: auto;
+}
+
 .contact-heading {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -319,8 +364,18 @@ body {
 }
 /* Каталог продуктов */
 
+.catalog-right-column {
+  width: 840px;
+}
+
 .catalog-products {
+  display: flex;
   background-color: #F0F0F0;
+}
+
+.catalog-filter {
+  width: 320px;
+  margin-right: 40px;
 }
 
 .product-list {
@@ -421,8 +476,24 @@ body {
 
 /* Футер страницы */
 
+.page-footer-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .page-footer {
   background-color: #444444;
+}
+
+.footer-contacts {
+  width: 250px;
+}
+
+.footer-links {
+  width: 450px;
+  margin-left: 119px;
+  margin-right: 183px;
 }
 
 .about-text {

@@ -51,24 +51,24 @@
 
 
     <main>
-      <div class="page-container">
-        <header class="inner-header">
-          <h1 class="inner-header-title">Моноподы для селфи</h1>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">Каталог товаров</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Моноподы для селфи</a>
-            </li>
-          </ul>
-        </header>
-        <section class="catalog-products">
-          <h2 class="catalog-title">Фильтр:</h2>
+      <header class="inner-header">
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </header>
+      <section class="catalog-products">
+        <div class="page-container-catalog">
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <h2 class="catalog-title">Фильтр:</h2>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Цвет</legend>
               <ul class="catalog-filter-list">
@@ -124,21 +124,23 @@
             <button class="button-vision" type="submit">Показать</button>
           </form>
           <div class="catalog-right-column">
-            <h2 class="catalog-title">Сортировка:</h2>
-            <select class="select-control" aria-label="Сортировка:">
-              <option value="popular">Популярные</option>
-            </select>
-            <ul class="button-updown">
-              <li class="updown-item">
-                <a class="button" href="#" >
-                  <span class="visually-hidden">Вверх</span>
-                </a>
-              </li>
-              <li class="updown-item">
-                <a class="button" href="#">
-                  <span class="visually-hidden">Вниз</span>
-                </a>
-              </li>
+            <div class="sorting-container">
+              <h2 class="catalog-title">Сортировка:</h2>
+              <select class="select-control" aria-label="Сортировка:">
+                <option value="popular">Популярные</option>
+              </select>
+              <ul class="button-updown">
+                <li class="updown-item">
+                  <a class="button" href="#" >
+                    <span class="visually-hidden">Вверх</span>
+                  </a>
+                </li>
+                <li class="updown-item">
+                  <a class="button" href="#">
+                    <span class="visually-hidden">Вниз</span>
+                  </a>
+                </li>
+            </div>
             </ul>
             <ul class="product-list">
               <li class="product-card">
@@ -173,8 +175,8 @@
             <button class="pagination-show-more" type="button">Загрузить ещё</button>
             <ul class="pagination">
               <li class="pagination-item">
-                <a class="pagination-link pagination-prev pagination-disabled">
-                  <span class="visually-hidden">Назад</span>
+                <a class="pagination-link pagination-prev pagination-disabled" href="#">
+                  <span class="pagination-forward">Назад</span>
                 </a>
               </li>
               <li class="pagination-item">
@@ -194,13 +196,13 @@
               </li>
               <li class="pagination-item">
                 <a class="pagination-link pagination-next" href="#">
-                  <span class="visually-hidden">Вперед</span>
+                  <span class="pagination-back">Вперед</span>
                 </a>
               </li>
             </ul>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
 

@@ -23,6 +23,8 @@
   font-display: swap;
 }
 
+* {box-sizing: border-box}
+
 html {
   height: 100%;
 }
@@ -56,7 +58,18 @@ body {
   color: #000000;
 }
 
+.navigation-form {
+  width: 50%;
+}
 
+.navigation-compare {
+  margin-right: 18px;
+}
+
+.navigation-login {
+  margin-left: 26px;
+  margin-right: auto;
+}
 
 .logo-link {
   width: 145px;
@@ -66,6 +79,8 @@ body {
 .navigation{
   width: 1160px;
   margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
   background-color: #FFE17F;
 }
 
@@ -84,6 +99,10 @@ body {
   line-height: 20px;
   text-align: center;
   color: #000000;
+}
+
+.navigation-item {
+  margin-left: 45px;
 }
 
 .navigation-link {
@@ -106,6 +125,10 @@ body {
   text-transform: uppercase;
 }
 
+.navigation-catalog {
+  margin-right: auto;
+  margin-left: 0;
+}
 /* index.html */
 /* Стили слайдера */
 

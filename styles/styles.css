@@ -88,6 +88,7 @@ body {
   display: flex;
   width: 1040px;
   margin: 0;
+  margin-top: 30px;
   padding: 0;
   list-style-type: none;
 }
@@ -99,10 +100,6 @@ body {
   line-height: 20px;
   text-align: center;
   color: #000000;
-}
-
-.navigation-item {
-  margin-left: 45px;
 }
 
 .navigation-link {
@@ -125,6 +122,10 @@ body {
   text-transform: uppercase;
 }
 
+.navigation-services-margin {
+  margin-left: 45px;
+}
+
 .navigation-catalog {
   margin-right: auto;
   margin-left: 0;
@@ -137,12 +138,19 @@ body {
 }
 
 .page-container {
+  display: flex;
+  flex-wrap: wrap;
   width: 1160px;
   margin: 0 auto;
 }
 
 .slider {
   margin-bottom: 80px;
+}
+
+.slider-specifications-list {
+  display: flex;
+  list-style: none;
 }
 
 .slider-heading {
@@ -167,12 +175,12 @@ body {
 }
 
 .slider-link {
+  display: block;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
   margin-bottom: 50px;
   color: #000000;
   text-decoration: none;
@@ -188,10 +196,19 @@ body {
 }
 
 .slider-description {
+  display: block;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
+}
+
+.slider-specifications-list {
+  padding: 0;
+}
+
+.slider-specifications-item {
+  padding-right: 20px;
 }
 
 .slider-pagination-item {
@@ -428,6 +445,8 @@ body {
   font-size: 50px;
   line-height: 50px;
   margin: 0;
+  width: 30%;
+  margin-top: 64px;
   color: #000000;
 }
 
@@ -436,11 +455,14 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  margin: 0;
+  margin: 64px 0 144px 252px;
+  width: 560px;
   color: #444444;
 }
 
 .distribution-form {
+  display: flex;
+  width: 1158px;
   padding-bottom: 56px;
 }
 
@@ -459,6 +481,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  display: block;
+  margin-left: auto;
   color: #444444;
 }
 
@@ -507,10 +531,12 @@ body {
 
 .catalog-right-column {
   width: 840px;
+  background-color:#FFFFFF;
 }
 
 .sorting-container {
   display: flex;
+  background-color:#F0F0F0;
 }
 
 .catalog-products {
@@ -525,7 +551,6 @@ body {
 
 .catalog-filter {
   width: 320px;
-  margin-right: 40px;
 }
 
 .catalog-filter-group {
@@ -537,6 +562,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #FFFFFF;
 }
 

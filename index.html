@@ -37,13 +37,13 @@
               <span>+</span>
             </li>
             <li class="navigation-item">
-              <a class="navigation-services" href="#">Доставка</a>
+              <a class="navigation-services navigation-services-margin" href="#">Доставка</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-services" href="#">Гарантии</a>
+              <a class="navigation-services navigation-services-margin" href="#">Гарантии</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-services" href="#">Контакты</a>
+              <a class="navigation-services navigation-services-margin" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -83,8 +83,14 @@
                   <h2 class="slider-heading">Порхает как бабочка,жалит как пчела!</h2>
                   <p class="slider-paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                   <a class="slider-link" href="#">Подробнее</a>
-                  <b class="slider-specifications">800 м</b><span class="slider-description">Дальность полета</span>
-                  <b class="slider-specifications">50 м</b><span class="slider-description">Радиус поражения</span>
+                  <ul class="slider-specifications-list">
+                    <li class="slider-specifications-item">
+                      <b class="slider-specifications">800 м</b><span class="slider-description">Дальность полета</span>
+                    </li>
+                    <li class="slider-specifications-item">
+                      <b class="slider-specifications">50 м</b><span class="slider-description">Радиус поражения</span>
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li class="slider-pagination-item visually-hidden">
@@ -102,9 +108,17 @@
                   <h2 class="slider-heading">Делай селфи, как Бен Стиллер! </h2>
                   <p class="slider-paragraph">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                   <a class="slider-link" href="#">Подробнее</a>
-                  <b class="slider-specifications">8,5 м</b><span class="slider-description">Длина палки</span>
-                  <b class="slider-specifications">5 кг</b><span class="slider-description">Вес палки</span>
-                  <b class="slider-specifications">Карбон</b><span class="slider-description">Материал</span>
+                  <ul class="slider-specifications-list">
+                    <li class="slider-specifications-item">
+                      <b class="slider-specifications">8,5 м</b><span class="slider-description">Длина палки</span>
+                    </li>
+                    <li class="slider-specifications-item">
+                      <b class="slider-specifications">5 кг</b><span class="slider-description">Вес палки</span>
+                    </li>
+                    <li class="slider-specifications-item">
+                      <b class="slider-specifications">Карбон</b><span class="slider-description">Материал</span>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ol>
@@ -222,14 +236,8 @@
         </section>
         <section class="distribution">
           <div class="page-container">
-            <ul class="distribution-list">
-              <li class="distribution-list-item">
-                <h2 class="distribution-heading">Подпишитесь на рассылку</h2>
-              </li>
-              <li class="distribution-list-item">
-                <p class="distribution-paragraph">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-              </li>
-            </ul>
+            <h2 class="distribution-heading">Подпишитесь на рассылку</h2>
+            <p class="distribution-paragraph">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
               <input type="email" id="email-distribution" name="email-distribution" placeholder="Ваш e-mail">
               <button class="button-distribution" type="submit">Подписаться</button>

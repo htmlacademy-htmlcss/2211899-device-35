@@ -223,6 +223,11 @@ body {
   margin-left: 45px;
 }
 
+.navigation-services-active {
+    border:solid #000000;
+    border-width: 0 0 2px 0;
+}
+
 .navigation-catalog {
   width: 293px;
   height: 50px;
@@ -337,20 +342,20 @@ body {
   display: flex;
 }
 
-.button-slider:hover {
+.slider .button:hover {
   background: #FFE17F;
 }
 
-.button-slider:focus {
+.slider .button:focus {
   outline: 2px solid #AF4FFF;
   border:0;
 }
-
-.button-slider:active {
+.slider .button:active::before,
+.slider .button:active {
   background: #FFCC33;
 }
 
-.button-slider:disabled {
+.slider .button:disabled {
   opacity: 0.3;
 }
 /* Список категорий каталога */
@@ -427,21 +432,10 @@ body {
   background-color: #F0F0F0;
 }
 
-.services .button {
-  padding: 0;
-  width: 160px;
-}
-
-.button-services:hover {
-  padding-left: 35px;
-  color: #FFE17F;
-  background: #000000;
-
-}
-
 .services-list {
+  width: 880px;
   margin: 72px 63px 72px 0;
-  padding: 0;
+  padding-left: 120px;
   list-style-type: none;
 }
 
@@ -453,10 +447,42 @@ body {
   margin-left: 106px;
 }
 .services-list-button {
-  margin: 65px 0;
-  margin-right: 243px;
+  width: 280px;
   padding:0;
   list-style-type: none;
+}
+
+.services .button {
+  padding: 0;
+  width: 160px;
+}
+
+.services .button-services-active {
+    width: 100%;
+    color: #FFE17F;
+    background: #000000;
+}
+
+.services .button-services-active::before {
+  background: #000000;
+}
+
+.services .button:hover::before,
+.services .button:hover,
+.services .button:active {
+  width: 100%;
+  color: #FFE17F;
+  background: #000000;
+}
+.services .button:focus::before{
+  background: #000000;
+}
+.services .button:focus{
+  outline: 2px solid #AF4FFF;
+  border:0;
+  width: 100%;
+  color: #FFE17F;
+  background: #000000;
 }
 
 .page-container-services::before {
@@ -464,7 +490,7 @@ body {
   background-color: #000000;
   width: 7px;
   height: 319px;
-  left: 280px;
+  left: 263px;
   top: 0;
   content: "";
   z-index: 0;
@@ -639,18 +665,17 @@ body {
   text-transform: uppercase;
 }
 
-.button-contact {
+.contact-information .button {
   width: 270px;
-
 }
-.button-contact:hover {
+.contact-information .button:hover {
   background: #FFE17F;
 }
-.button-contact:focus {
+.contact-information .button:focus {
   outline: 2px solid #AF4FFF;
   border:0;
 }
-.button-contact:disabled {
+.contact-information.button:disabled {
   opacity: 0.3;
 }
 
@@ -828,8 +853,24 @@ body {
   background-color:#F0F0F0;
 }
 
-.button-catalog {
+.catalog-products .button {
   padding:0;
+}
+.catalog-products .button:hover {
+  background: #FFE17F;
+}
+.catalog-products .button:focus {
+  outline: 2px solid #AF4FFF;
+  border:0;
+}
+.catalog-products .button:active::before,
+.catalog-products .button:active {
+  background: #FFCC33;
+}
+.catalog-products .button:disabled {
+  display: block;
+  outline: 2px solid #AF4FFF;
+  border:0;
 }
 
 .button-updown {
@@ -846,6 +887,18 @@ body {
 
 .sorting-button-updown {
   padding: 9.5px 10px;
+  opacity: 0.2;
+
+}
+
+.sorting-button-updown:hover {
+  opacity: 0.5;
+}
+
+.sorting-button-updown:focus {
+
+  outline: 2px solid #AF4FFF;
+  border:0;
 }
 
 .catalog-products {
@@ -931,6 +984,8 @@ body {
   height: 30px;
   margin: 20px 206px 20px 0;
   color: #000000;
+  border: 0;
+  background-color:transparent;
 }
 
 .product-list {
@@ -939,14 +994,41 @@ body {
 }
 
 .product-card {
+  position: relative;
   width: 360px;
   padding:0;
   margin: 0 20px 44px 20px;
   list-style-type: none;
 }
 
+.product-list .button {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  top: 35%;
+  left: 20%;
+  margin-bottom: 212px;
+}
+
 .product-card-link {
   text-decoration: none;
+}
+.product-card-link:hover :not(.button){
+  opacity: 0.3;
+}
+.product-card-link:hover  .button {
+  display: block;
+}
+.product-card-link:active  .button {
+  display: block;
+}
+.product-card-link:active  .button::before {
+  background-color: #FFC700;
+}
+.product-card-link:focus {
+  display: block;
+  outline: 2px solid #AF4FFF;
+  border:0;
 }
 
 .product-card-title {
@@ -980,13 +1062,21 @@ body {
   height: 71px;
   padding: 0;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-bottom: 78px;
   align-items: center;
   list-style-type: none;
   justify-content: center;
   background-color: #FFFFFF;
   background: #EBEBEB;
+}
+
+.pagination-item:first-of-type {
+  margin-right: auto;
+}
+
+.pagination-item:last-of-type {
+  margin-left: auto;
 }
 
 .pagination-show-more {
@@ -1000,13 +1090,29 @@ body {
   height: 55px;
   padding: 0;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-bottom: 44px;
   border: 3px solid #E5E5E5;
   color: #000000;
   background-color: #FFFFFF;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.pagination-show-more:hover {
+  border: 3px solid #000000;
+}
+.pagination-show-more:active {
+  opacity: 0.3;
+  border: 3px solid #000000;
+}
+.pagination-show-more:focus {
+  border: 3px solid #E5E5E5;
+  outline: 2px solid #AF4FFF;
+}
+.pagination-show-more:disabled {
+  opacity: 0.3;
+  border: 3px solid #E5E5E5;
 }
 
 .pagination-link-number {
@@ -1020,6 +1126,27 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.pagination-current {
+  color: #444444;
+  opacity: 0.6;
+}
+
+.pagination-link-number:hover {
+  color: #444444;
+  opacity: 1;
+}
+.pagination-link-number:active {
+  color: #444444;
+  opacity: 0.1;
+}
+.pagination-link-number:focus {
+  color: #444444;
+  opacity: 0.3;
+  outline: 2px solid #AF4FFF;
+  border:0;
 }
 
 .pagination-link {
@@ -1040,20 +1167,16 @@ body {
   color: #000000;
 }
 
-.pagination-right {
-  margin-right: 146px;
-}
-.pagination-left {
-  margin-left: 146px;
-}
-.pagination-backforward:hover {
+.pagination-link .pagination-backforward:hover {
   background: #DCDCDC;
 }
-.pagination-backforward:active {
+.pagination-link .pagination-backforward:active {
   background: #DCDCDC;
   opacity: 0.3;
 }
-.pagination-backforward:focus {
+.pagination-link:focus {
+  display: flex;
+  align-items: flex-end;
   background:#F0F0F0;
   outline: 2px solid #AF4FFF;
   border:0;

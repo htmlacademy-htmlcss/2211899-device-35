@@ -98,34 +98,21 @@
     <main class="main-index main-container">
         <section class="slider">
           <div class="page-container">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-            <ul class="pagination-list">
-              <li class="pagination-item">
-                <button class="button-pagination" type="button">
-                  <span class="visually-hidden">.</span>
-                </button>
-              </li>
-              <li class="pagination-item">
-                <button class="button-pagination" type="button">
-                  <span class="visually-hidden">.</span>
-                </button>
-              </li>
-              <li class="pagination-item">
-                <button class="button-pagination" type="button">
-                  <span class="visually-hidden">.</span>
-                </button>
-              </li>
-            </ul>
             <ol class="slider-pagination">
               <li class="slider-pagination-item">
-                <img class="slider-image" src="images/slider/copter.png" width="560px" height="560px" alt="Квадрокоптер">
+                <div class="slider-wrapper-images">
+                  <img class="slider-image" src="images/slider/copter.png" width="560px" height="560px" alt="Квадрокоптер">
+                  <div class="slider-controls">
+                    <button class="slider-button slider-prev" type="button">
+                      <span class="visually-hidden">Предыдущее фото</span>
+                    </button>
+                    <button class="slider-button slider-next" type="button">
+                      <span class="visually-hidden">Следующее фото</span>
+                    </button>
+                  </div>
+                </div>
                 <div class="slider-block">
-                  <h2 class="slider-heading">Порхает как бабочка,жалит как пчела!</h2>
+                  <h2 class="slider-heading">Порхает как бабочка, жалит как пчела!</h2>
                   <p class="slider-paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                   <a class="button" href="#">Подробнее</a>
                   <ul class="slider-specifications-list">
@@ -167,6 +154,24 @@
                 </div>
               </li>
             </ol>
+            <ul class="slider-pagination-list">
+              <li class="slider-pagination-number">
+                <span class="button-pagination-wrapper">
+                  <button class="button-pagination button-pagination-active" type="button">
+                  </button>
+                </span>
+              </li>
+              <li class="slider-pagination-number">
+                <button class="button-pagination" type="button">
+                  <span class="button-pagination-wrapper"></span>
+                </button>
+              </li>
+              <li class="slider-pagination-number">
+                <button class="button-pagination" type="button">
+                  <span class="button-pagination-wrapper"></span>
+                </button>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="catalog-categories">

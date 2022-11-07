@@ -62,7 +62,7 @@
                 </svg>
                 Корзина
               </a>
-              <div class="popover-cart">
+              <div class="popover-cart visually-hidden">
                 <div class="popover-cart-content">
                   <button class="popover-cart-close" type="button">
                     2
@@ -93,10 +93,10 @@
           </ul>
           <ul class="navigation-list">
             <li class="navigation-item navigation-catalog">
-              <a class="navigation-services" href="#">
+              <a class="navigation-services navigation-popover-active" href="#">
                 Каталог товаров
                 <span class="navigation-icon-catalog">
-                  <svg width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="navigation-icon-catalog-item" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3" clip-path="url(#clip0_26956_603)">
                     <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
                     </g>
@@ -106,9 +106,12 @@
                     </clipPath>
                     </defs>
                   </svg>
+                  <svg class="navigation-icon-catalog-item" width="16" height="2" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0H0V2H16V0Z" fill="black"/>
+                  </svg>
                 </span>
               </a>
-              <div class="popover popover-cart visually-hidden">
+              <div class="popover popover-cart">
                 <div class="popover-content">
                     <ul class="popover-list">
                       <li class="popover-list-item"><p>Виртуальная реальность</p></li>
@@ -494,5 +497,51 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-delivery">
+        <section class="modal-content">
+          <div class="modal-wrapper">
+              <h2 class="modal-title">Доставка под заказ</h2>
+              <button class="modal-close-button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+          </div>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <ul class="modal-form-list">
+              <li class="modal-form-item">
+                <p class="field-group">
+                  <label class="label-input" for="input-name">Ваше имя:</label>
+                  <input class="modal-form-field field" type="text" id="input-name" name="input-name" placeholder="Введите имя">
+                </p>
+                <p class="field-group">
+                  <label class="label-input" for="input-password">Ваш e-mail:</label>
+                  <input class="modal-form-field field" type="password" id="input-password" name="input-password" placeholder="Пароль">
+                </p>
+              </li>
+              <li class="modal-form-item">
+                <p class="field-group">
+                  <label class="label-input" for="need-delivery">Что нужно привезти:</label>
+                  <input class="modal-form-need field" type="text" id="need-delivery" name="need-delivery" placeholder="В свободной форме">
+                </p>
+                <p class="field-group">
+                      <span class="quantity-wrapper">
+                      <label class="label-input" for="input-number">Количество:</label>
+                      <span class="value-info"></span>
+                      </span>
+                      <span class="quantity-wrapper">
+                      <button class="value-minus" type="button"></button>
+                      <input class="modal-form-number field" type="text" id="input-number" name="input-number" placeholder="">
+                      <button class="value-plus" type="button"></button>
+                      </span>
+                </p>
+              </li>
+              <li class="modal-form-item">
+                <button class="button" type="button">Отправить</button>
+              </li>
+            </ul>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

@@ -1809,3 +1809,16 @@ box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 .modal-form-item .button:active {
   background: #FFCC33;
 }
+
+.modal-note {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.field-group-error input {
+  border: 2px solid #FF3D3D;
+}
+
+.field-group-error span {
+  color: #FF3D3D;
+}

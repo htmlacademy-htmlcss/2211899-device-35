@@ -137,24 +137,28 @@ body {
 }
 
 .input-search {
-  width: 359px;
-  height: 40px;
-  border-width: 2px 0 2px 2px;
-  border-style: solid;
-  border-color: #000000;
-  border-radius: 50px 0 0 50px;
-  padding: 0 0 0 48px;
-  align-items: center;
-  background-color:transparent;
-}
-
-.input-search::placeholder {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  border-width: 2px 0 2px 2px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 50px 0 0 50px;
+  width: 359px;
+  height: 40px;
+  padding: 0 0 0 48px;
+  align-items: center;
+  background-color:transparent;
+}
+
+.input-search:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.input-search::placeholder {
   opacity: 0.3;
 }
 
@@ -173,6 +177,18 @@ body {
   background-color:transparent;
 }
 
+.button-search:hover {
+  background:#000000;
+  color: #FFFFFF;
+}
+.button-search:focus {
+  outline: 2px solid #AF4FFF;
+  border: 0;
+}
+.button-search:active {
+  color: #444444;
+}
+
 .navigation-popover-active svg:first-of-type{
   display: none;
 }
@@ -180,9 +196,8 @@ body {
   display: block;
 }
 
-.button-search:hover,
 .navigation-link:hover,
-.navigation-services:hover {
+.navigation-services:hover{
   opacity: 0.6;
 }
 .navigation-link:active,
@@ -987,11 +1002,21 @@ body {
   line-height: 30px;
   color: #444444;
   width: 557px;
-  height: 55px;
+  height: 63px;
   background-color:transparent;
   border-color: #C4C4C4;
   border-width: 0 0 3px 0;
   padding: 11px 16px 11px 16px;
+}
+
+.input-distribution:focus {
+  background: #DCDCDC;
+  border-color: #C4C4C4;
+}
+
+.input-distribution-error {
+  border-bottom: 3px solid;
+  border-color: #FF3D3D;
 }
 
 .button-distribution {
@@ -1006,6 +1031,20 @@ body {
   text-align: center;
   text-transform: uppercase;
   border: 3px solid #C4C4C4;
+}
+
+.button-distribution:hover {
+  color: #FFFFFF;
+  background: #000000;
+  border-color:#000000;
+}
+.button-distribution:focus {
+  outline: 2px solid #AF4FFF;
+}
+.button-distribution:active {
+  color:#444444;
+  background: #000000;
+  border-color:#000000;
 }
 
 .distribution-info {
@@ -1722,17 +1761,45 @@ box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .modal-form-field {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   width: 360px;
   height: 60px;
+  padding: 20px;
   border: none;
   background: #F0F0F0;
 }
 
+
 .modal-form-need {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   width: 540px;
   height: 60px;
+  padding: 20px;
   border: none;
   background: #F0F0F0;
+}
+
+.modal-form-need:hover,
+.modal-form-field:hover,
+.value-minus:hover,
+.value-plus:hover,
+.modal-form-number:hover {
+  background-color: #DCDCDC;
+}
+.modal-form-need:focus,
+.modal-form-field:focus,
+.value-minus:focus,
+.value-plus:focus,
+.modal-form-number:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .value-info {

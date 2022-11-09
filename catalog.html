@@ -32,7 +32,7 @@
                   <path d="M15.7278 14.3L12.6278 11.2C13.5278 10 14.0278 8.6 14.0278 7C14.0278 3.1 10.9278 0 7.02777 0C3.12777 0 0.027771 3.1 0.027771 7C0.027771 10.9 3.12777 14 7.02777 14C8.62777 14 10.0278 13.5 11.2278 12.6L14.3278 15.7C14.5278 15.9 14.7278 16 15.0278 16C15.6278 16 16.0278 15.6 16.0278 15C16.0278 14.8 15.9278 14.5 15.7278 14.3ZM2.02777 7C2.02777 4.2 4.22777 2 7.02777 2C9.82777 2 12.0278 4.2 12.0278 7C12.0278 9.8 9.82777 12 7.02777 12C4.22777 12 2.02777 9.8 2.02777 7Z" fill="black"/>
                 </svg>
               </span>
-              <input class="input-search" type="text" id="search-nav" name="search-nav" placeholder="Поиск по сайту">
+                <input class="input-search" type="text" id="search-nav" name="search-nav" placeholder="Поиск по сайту">
               <button class="button-search" type="submit">Найти</button>
             </form>
           </li>
@@ -61,7 +61,7 @@
               </svg>
               Корзина
             </a>
-            <div class="popover-cart">
+            <div class="popover-cart visually-hidden">
               <div class="popover-cart-content">
                 <button class="popover-cart-close" type="button">
                   2
@@ -92,10 +92,10 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item navigation-catalog">
-            <a class="navigation-services" href="#">
+            <a class="navigation-services navigation-popover-active" href="#">
               Каталог товаров
               <span class="navigation-icon-catalog">
-                <svg width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <svg class="navigation-icon-catalog-item" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.3" clip-path="url(#clip0_26956_603)">
                   <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
                   </g>
@@ -104,6 +104,9 @@
                   <rect width="16" height="16"/>
                   </clipPath>
                   </defs>
+                </svg>
+                <svg class="navigation-icon-catalog-item" width="16" height="2" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 0H0V2H16V0Z" fill="black"/>
                 </svg>
               </span>
             </a>

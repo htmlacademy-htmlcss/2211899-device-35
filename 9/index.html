@@ -33,7 +33,7 @@
                     <path d="M15.7278 14.3L12.6278 11.2C13.5278 10 14.0278 8.6 14.0278 7C14.0278 3.1 10.9278 0 7.02777 0C3.12777 0 0.027771 3.1 0.027771 7C0.027771 10.9 3.12777 14 7.02777 14C8.62777 14 10.0278 13.5 11.2278 12.6L14.3278 15.7C14.5278 15.9 14.7278 16 15.0278 16C15.6278 16 16.0278 15.6 16.0278 15C16.0278 14.8 15.9278 14.5 15.7278 14.3ZM2.02777 7C2.02777 4.2 4.22777 2 7.02777 2C9.82777 2 12.0278 4.2 12.0278 7C12.0278 9.8 9.82777 12 7.02777 12C4.22777 12 2.02777 9.8 2.02777 7Z" fill="black"/>
                   </svg>
                 </span>
-                <input class="input-search" type="text" id="search-nav" name="search-nav" placeholder="Поиск по сайту">
+                  <input class="input-search" type="text" id="search-nav" name="search-nav" placeholder="Поиск по сайту">
                 <button class="button-search" type="submit">Найти</button>
               </form>
             </li>
@@ -43,6 +43,15 @@
                   <path d="M0.027771 12H13.0278C12.8278 9.4 10.9278 7.2 8.32777 6.5C9.32777 5.9 10.0278 4.8 10.0278 3.5C10.0278 1.6 8.42777 0 6.52777 0C4.62777 0 3.02777 1.6 3.02777 3.5C3.02777 4.8 3.72777 5.9 4.72777 6.5C2.12777 7.2 0.227771 9.4 0.027771 12Z" fill="black"/>
                 </svg>
                 Войти
+              </a>
+              <a class="navigation-link visually-hidden" href="#">
+                <svg class="navigation-icon" width="14" height="12" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.027771 12H13.0278C12.8278 9.4 10.9278 7.2 8.32777 6.5C9.32777 5.9 10.0278 4.8 10.0278 3.5C10.0278 1.6 8.42777 0 6.52777 0C4.62777 0 3.02777 1.6 3.02777 3.5C3.02777 4.8 3.72777 5.9 4.72777 6.5C2.12777 7.2 0.227771 9.4 0.027771 12Z" fill="black"/>
+                </svg>
+                Коля Петухов
+              </a>
+              <a class="navigation-exit-profile visually-hidden" href="#">
+                Выйти
               </a>
             </li>
             <li class="navigation-item">
@@ -97,7 +106,7 @@
                 Каталог товаров
                 <span class="navigation-icon-catalog">
                   <svg class="navigation-icon-catalog-item" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.3" clip-path="url(#clip0_26956_603)">
+                    <g clip-path="url(#clip0_26956_603)">
                     <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
                     </g>
                     <defs>
@@ -111,7 +120,7 @@
                   </svg>
                 </span>
               </a>
-              <div class="popover popover-cart">
+              <div class="popover popover-cart visually-hidden">
                 <div class="popover-content">
                     <ul class="popover-list">
                       <li class="popover-list-item"><p>Виртуальная реальность</p></li>
@@ -361,7 +370,7 @@
               <p class="delivery-text">ДОСТАВИМ РЕДКИЙ ТОВАР ПОД ЗАКАЗ</p>
                 <span class="delivery-info">
                   <svg class="delivery-info-icon" width="2" height="12" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.3" clip-path="url(#clip0_32506_30)">
+                    <g clip-path="url(#clip0_32506_30)">
                     <path d="M2 0H0V2H2V0Z" fill="black"/>
                     <path d="M2 4H0V12H2V4Z" fill="black"/>
                     </g>
@@ -405,7 +414,7 @@
             <h2 class="distribution-heading">Подпишитесь на рассылку</h2>
             <p class="distribution-paragraph">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="input-distribution" type="email" id="email-distribution" name="email-distribution" placeholder="Ваш e-mail">
+              <input class="input-distribution input-distribution-error" type="email" id="email-distribution" name="email-distribution" placeholder="Ваш e-mail">
               <button class="button-distribution" type="submit">Подписаться</button>
               <svg class="distribution-icon" width="16" height="17" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.498 1L5.89805 10.3L1.49805 6V10.7L5.99805 15L15.498 5.7V1Z" fill="#08AF00"/>
@@ -497,7 +506,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-container">
+    <div class="modal-container visually-hidden">
       <div class="modal modal-delivery">
         <section class="modal-content">
           <div class="modal-wrapper">
@@ -513,9 +522,10 @@
                   <label class="label-input" for="input-name">Ваше имя:</label>
                   <input class="modal-form-field field" type="text" id="input-name" name="input-name" placeholder="Введите имя">
                 </p>
-                <p class="field-group">
-                  <label class="label-input" for="input-password">Ваш e-mail:</label>
-                  <input class="modal-form-field field" type="password" id="input-password" name="input-password" placeholder="Пароль">
+                <p class="field-group field-group-error">
+                  <label class="label-input" for="input-e-mail">Ваш e-mail:</label>
+                  <input class="modal-form-field field" type="e-mail" id="input-e-mail" name="input-e-mail" placeholder="Пароль">
+                  <span class="modal-note">Забавный у вас адрес</span>
                 </p>
               </li>
               <li class="modal-form-item">
@@ -530,7 +540,7 @@
                       </span>
                       <span class="quantity-wrapper">
                       <button class="value-minus" type="button"></button>
-                      <input class="modal-form-number field" type="text" id="input-number" name="input-number" placeholder="">
+                      <input class="modal-form-number field" type="text" id="input-number" name="input-number" placeholder="1">
                       <button class="value-plus" type="button"></button>
                       </span>
                 </p>

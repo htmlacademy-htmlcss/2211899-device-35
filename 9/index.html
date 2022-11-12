@@ -29,9 +29,6 @@
             <li class="navigation-item navigation-form">
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
                 <span class="navigation-icon icon-search">
-                  <svg width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.7278 14.3L12.6278 11.2C13.5278 10 14.0278 8.6 14.0278 7C14.0278 3.1 10.9278 0 7.02777 0C3.12777 0 0.027771 3.1 0.027771 7C0.027771 10.9 3.12777 14 7.02777 14C8.62777 14 10.0278 13.5 11.2278 12.6L14.3278 15.7C14.5278 15.9 14.7278 16 15.0278 16C15.6278 16 16.0278 15.6 16.0278 15C16.0278 14.8 15.9278 14.5 15.7278 14.3ZM2.02777 7C2.02777 4.2 4.22777 2 7.02777 2C9.82777 2 12.0278 4.2 12.0278 7C12.0278 9.8 9.82777 12 7.02777 12C4.22777 12 2.02777 9.8 2.02777 7Z" fill="black"/>
-                  </svg>
                 </span>
                   <input class="input-search" type="text" id="search-nav" name="search-nav" placeholder="Поиск по сайту">
                 <button class="button-search" type="submit">Найти</button>
@@ -66,17 +63,17 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
+                <button class="navigation-cart-close" type="button">
+                  2
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
                 <svg class="navigation-icon" width="17" height="14" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <path d="M15.3278 5L11.8278 5.2L8.62783 0.3C8.52783 0.1 8.22783 0 8.02783 0C7.82783 0 7.52783 0.1 7.42783 0.3L4.22783 5.2H0.727832C0.327832 5.2 0.027832 5.5 0.027832 5.9C0.027832 6 0.027832 6 0.027832 6.1L1.92783 12.9C2.12783 13.6 2.62783 14 3.32783 14H12.7278C13.4278 14 13.9278 13.6 14.1278 12.9L16.0278 6C16.0278 5.9 16.0278 5.9 16.0278 5.8C16.0278 5.4 15.7278 5 15.3278 5ZM8.02783 1.9L10.2278 5.1H5.92783L8.02783 1.9Z" fill="black"/>
                 </svg>
                 Корзина
               </a>
-              <div class="popover-cart visually-hidden">
+              <div class="popover-cart ">
                 <div class="popover-cart-content">
-                  <button class="popover-cart-close" type="button">
-                    2
-                    <span class="visually-hidden">Закрыть</span>
-                  </button>
                   <ul class="popover-cart-list">
                     <li class="popover-cart-item cart-item">
                       <img src="images/catalog/self1-catalog.jpg" width="39px" height="43px" alt="">
@@ -414,7 +411,7 @@
             <h2 class="distribution-heading">Подпишитесь на рассылку</h2>
             <p class="distribution-paragraph">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="input-distribution input-distribution-error" type="email" id="email-distribution" name="email-distribution" placeholder="Ваш e-mail">
+              <input class="input-distribution" type="email" id="email-distribution" name="email-distribution" placeholder="Ваш e-mail">
               <button class="button-distribution" type="submit">Подписаться</button>
               <svg class="distribution-icon" width="16" height="17" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.498 1L5.89805 10.3L1.49805 6V10.7L5.99805 15L15.498 5.7V1Z" fill="#08AF00"/>
@@ -534,15 +531,19 @@
                   <input class="modal-form-need field" type="text" id="need-delivery" name="need-delivery" placeholder="В свободной форме">
                 </p>
                 <p class="field-group">
-                      <span class="quantity-wrapper">
-                      <label class="label-input" for="input-number">Количество:</label>
+                  <span class="quantity-wrapper">
+                    <label class="label-input" for="input-number">Количество:</label>
                       <span class="value-info"></span>
+                      <span class="value-info-tooltip visually-hidden">
+                          Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                          к провозу багажа.
                       </span>
-                      <span class="quantity-wrapper">
+                    </span>
+                    <span class="quantity-wrapper">
                       <button class="value-minus" type="button"></button>
                       <input class="modal-form-number field" type="text" id="input-number" name="input-number" placeholder="1">
                       <button class="value-plus" type="button"></button>
-                      </span>
+                    </span>
                 </p>
               </li>
               <li class="modal-form-item">

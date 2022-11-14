@@ -1152,7 +1152,8 @@ body {
   width: 1160px;
   margin: 0 auto;
   margin-top: 35px;
-  margin-bottom: 35px;
+  margin-left: 156px;
+  margin-bottom: 30px;
 }
 
 .inner-header h1{
@@ -1269,6 +1270,8 @@ body {
 
 .catalog-filter {
   width: 320px;
+  margin-bottom: 60px;
+  padding-left: 60px;
 }
 
 .catalog-filter-group {
@@ -1309,8 +1312,8 @@ body {
   text-transform: uppercase;
 }
 
-.catalog-filter {
-  margin-bottom: 60px;
+.filter-title {
+  margin-bottom: 72px;
 }
 
 .catalog-sorting {
